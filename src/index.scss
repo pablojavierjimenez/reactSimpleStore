@@ -1,3 +1,10 @@
+:root {
+  --theme-bg-color_1: hsl(351, 90%, 45%); 
+  --theme-bg-color_2: hsl(205, 92%, 5%);
+  --theme-bg-color_3: hsl(0, 0%, 87%);
+  --default-padding: .5vmin 1vw;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -6,6 +13,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--theme-bg-color_1);
+  display: flex;
+  justify-content: center;
 }
 
 code {

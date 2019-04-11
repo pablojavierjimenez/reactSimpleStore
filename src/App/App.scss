@@ -1,0 +1,70 @@
+.App {
+  text-align: center;
+  max-width: 968px;
+  border: 1px solid var(--theme-bg-color_2);
+  width: 100vw;
+}
+
+.App_logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 10vh;
+  pointer-events: none;
+}
+
+.App_headerContent__container {
+  background-color: var(--theme-bg-color_2);
+  min-height: 60px;
+  max-height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding:var(--default-padding);
+  position: sticky;
+  top: 0;
+}
+
+.App-link {
+  color: #61dafb;
+}
+.App_header_menuStick {
+  border: 2px solid lightgray;
+  width: 5vmin;
+  border-radius: 2vmin;
+  margin-bottom: 1vmin;
+}
+#App_mainContent__container {
+  padding: .5vh 1vw;
+  min-height: 80vh;
+  display: flex;
+  justify-content: space-between;
+  
+  #App_itemGallery__containes {
+    min-height: 50vh;    
+  }
+  
+  #App_shoppingCart__container {
+    
+    #App_shoppingCart_itemList {
+      background-color: var(--theme-bg-color_3);
+    }
+    
+    #App_shoppingCart_totalAmount {
+      background-color: var(--theme-bg-color_2);
+    }
+  }
+}
+
+#App_footerContent__container {
+  height: 10vh;
+  background-color: var(--theme-bg-color_2);
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
