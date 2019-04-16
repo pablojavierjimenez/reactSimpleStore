@@ -2,7 +2,13 @@ import React, { Component } from 'react';
 import logo from './Assets/logo-s.png';
 import './App.scss';
 
+// Componenets
+import ProductList from './Components/productList/productList';
+import ProductItem from './Components/productItem/productItem';
+import ShoppingCart from './Components/shoppingCart/shoppingCart';
+
 class App extends Component {
+  constructor() {}
   render() {
     return (
       <div className="App">
@@ -20,36 +26,12 @@ class App extends Component {
             <div className="App_header_menuStick"></div>
           </a>
         </header>
-        
+
         <main id="App_mainContent__container">
-          <section id="App_itemGallery__containes">
-            <h1>item gallery</h1>
-            <h1>item gallery</h1>
-            <h1>item gallery</h1>
-            <h1>item gallery</h1>
-            <h1>item gallery</h1>
-            <h1>item gallery</h1>
-            <h1>item gallery</h1>
-            <h1>item gallery</h1>
-            <h1>item gallery</h1>
-            <h1>item gallery</h1>
-            <h1>item gallery</h1>
-            <h1>item gallery</h1>
-            <h1>item gallery</h1>
-            <h1>item gallery</h1>
-          </section>
-          <aside id="App_shoppingCart__container">
-            <section id="App_shoppingCart_itemList">
-              <h4>ite compra</h4>
-              <h4>ite compra</h4>
-              <h4>ite compra</h4>
-              <h4>ite compra</h4>
-              <h4>ite compra</h4>
-            </section>
-            <section id="App_shoppingCart_totalAmount">
-              12345
-            </section>
-          </aside>
+          <ProductList>
+            <ProductItem/>
+          </ProductList>
+          <ShoppingCart/>
         </main>
 
         <footer id="App_footerContent__container">

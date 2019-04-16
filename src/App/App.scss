@@ -39,21 +39,6 @@
   min-height: 80vh;
   display: flex;
   justify-content: space-between;
-  
-  #App_itemGallery__containes {
-    min-height: 50vh;    
-  }
-  
-  #App_shoppingCart__container {
-    
-    #App_shoppingCart_itemList {
-      background-color: var(--theme-bg-color_3);
-    }
-    
-    #App_shoppingCart_totalAmount {
-      background-color: var(--theme-bg-color_2);
-    }
-  }
 }
 
 #App_footerContent__container {
