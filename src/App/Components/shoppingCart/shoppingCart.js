@@ -28,7 +28,8 @@ class ShoppingCart extends Component {
   }
   render() {
     return (
-      <aside id="App_shoppingCart__container">
+      <aside id="App_shoppingCart__container"
+      className="bd-notification is-primary has-text-centered is-one-third is-mobile column is-one-quarter">
         <section id="App_shoppingCart_itemList">
           <h4>ite compra</h4>
           <h4>ite compra</h4>
@@ -49,7 +50,7 @@ class ShoppingCart extends Component {
  */
 ShoppingCart.propTypes = {
   name: PropTypes.string,
-  age: PropTypes.number.isRequired
+  // age: PropTypes.number.isRequired
 };
 
 export default ShoppingCart;

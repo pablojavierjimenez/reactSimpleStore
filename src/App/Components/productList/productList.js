@@ -28,7 +28,7 @@ class ProductList extends Component {
   }
   render() {
     return (
-      <section id="App_itemGallery__containes">
+      <section id="App_itemGallery__containes" className="column is-9 is-two-thirds is-mobile">
         {this.props.children}
       </section>
     )
@@ -40,7 +40,7 @@ class ProductList extends Component {
  */
 ProductList.propTypes = {
   name: PropTypes.string,
-  age: PropTypes.number.isRequired
+  // age: PropTypes.number.isRequired
 };
 
 export default ProductList;
